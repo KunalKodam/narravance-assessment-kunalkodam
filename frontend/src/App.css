@@ -1,4 +1,132 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #f0f4f8;
+  margin: 0;
+  padding: 0;
+}
+
 .App {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+h1 {
+  color: #2c3e50;
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #34495e;
+  font-size: 1.5em;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  color: #34495e;
+  font-size: 1.2em;
+  margin-top: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #ecf0f1;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 5px;
+}
+
+input, select {
+  padding: 10px;
+  border: 1px solid #bdc3c7;
+  border-radius: 5px;
+  font-size: 1em;
+  transition: border-color 0.3s;
+}
+
+input:focus, select:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+button {
+  padding: 10px;
+  background-color: #3498db;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+p {
+  color: #7f8c8d;
+  font-size: 1em;
+  text-align: center;
+}
+
+.task-list {
+  margin-top: 20px;
+}
+
+select {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  display: block;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Visualization styles */
+.tooltip {
+  position: absolute;
+  background: #34495e;
+  color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.9em;
+  pointer-events: none;
+}
+
+svg {
+  display: block;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* .App {
   text-align: center;
   padding: 20px;
 }
@@ -11,4 +139,4 @@ form {
 }
 input {
   padding: 5px;
-}
+} */

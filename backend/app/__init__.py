@@ -1,5 +1,7 @@
 from flask import Flask
 from flask_cors import CORS
+from flask_limiter import Limiter
+from flask_limiter.util import get_remote_address
 from app.models import db
 from app.routes import bp
 from app.tasks import worker
@@ -14,9 +16,15 @@ def create_app():
         "pool_recycle": 3600,
     }
 
-
     # Enable CORS for all routes, allowing requests from localhost:3000
     CORS(app, resources={r"/api/*": {"origins": "http://localhost:3000"}})
+
+    # Initialize rate limiter
+    limiter = Limiter(
+        app=app,
+        key_func=get_remote_address,
+        default_limits=["200 per day", "50 per hour"]
+    )
 
     db.init_app(app)
     app.register_blueprint(bp, url_prefix='/api')
@@ -24,7 +32,6 @@ def create_app():
     with app.app_context():
         db.create_all()
 
-    # Start the worker thread with the app instance
     threading.Thread(target=worker, args=(app,), daemon=True).start()
 
     return app

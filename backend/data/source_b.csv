@@ -1,4 +1,51 @@
 company,car_model,sale_date,price
-Ford,F-150,2023-07-22,45000
-Honda,Accord,2024-03-15,28000
-Toyota,Corolla,2025-01-05,27000
+Honda,Civic,2020-02-15,21000
+Toyota,Camry,2020-05-20,27000
+Ford,F-150,2020-08-10,40000
+Chevrolet,Impala,2020-10-25,25000
+Tesla,Model 3,2020-12-15,44000
+Honda,Accord,2021-03-05,28000
+Toyota,Corolla,2021-04-18,22000
+Ford,Explorer,2021-06-22,36000
+Chevrolet,Silverado,2021-08-15,37000
+Tesla,Model Y,2021-09-30,51000
+Honda,CR-V,2021-11-12,30000
+Toyota,RAV4,2022-01-20,31000
+Ford,Bronco,2022-03-10,40000
+Chevrolet,Equinox,2022-05-05,26000
+Tesla,Model S,2022-07-18,84000
+Honda,Pilot,2022-09-25,35000
+Toyota,Highlander,2022-11-08,38000
+Ford,Mustang,2023-01-15,34000
+Chevrolet,Traverse,2023-03-20,33000
+Tesla,Model X,2023-05-10,94000
+Honda,Civic,2023-06-25,23000
+Toyota,Camry,2023-08-12,29000
+Ford,F-150,2023-10-05,41000
+Chevrolet,Malibu,2023-11-18,27000
+Tesla,Model 3,2024-01-10,46000
+Honda,Accord,2024-02-28,30000
+Toyota,Corolla,2024-04-15,24000
+Ford,Explorer,2024-06-20,38000
+Chevrolet,Silverado,2024-08-10,39000
+Tesla,Model Y,2024-09-25,53000
+Honda,CR-V,2024-11-05,32000
+Toyota,RAV4,2025-01-15,33000
+Ford,Bronco,2025-02-20,42000
+Chevrolet,Equinox,2025-03-25,28000
+Tesla,Model S,2025-05-10,86000
+Honda,Pilot,2025-06-15,37000
+Toyota,Highlander,2025-07-20,40000
+Ford,Mustang,2025-08-25,35000
+Chevrolet,Traverse,2025-09-30,34000
+Tesla,Model X,2025-10-15,96000
+Honda,Civic,2020-07-10,20000
+Toyota,Camry,2021-12-05,26000
+Ford,F-150,2022-02-15,39000
+Chevrolet,Impala,2023-04-10,24000
+Tesla,Model 3,2024-03-20,45000
+Honda,Accord,2025-04-15,31000
+Toyota,Corolla,2020-09-25,21000
+Ford,Explorer,2021-10-30,35000
+Chevrolet,Silverado,2022-12-10,36000
+Tesla,Model Y,2023-07-15,52000
