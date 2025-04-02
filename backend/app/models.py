@@ -1,17 +1,29 @@
 from flask_sqlalchemy import SQLAlchemy
+from contextlib import contextmanager
 
 db = SQLAlchemy()
+
+@contextmanager
+def session_scope():
+    """Provide a transactional scope around a series of operations."""
+    session = db.session
+    try:
+        yield session
+        session.commit()
+    except Exception:
+        session.rollback()
+        raise
+    finally:
+        session.close()
 
 class Task(db.Model):
     __tablename__ = 'tasks'
     id = db.Column(db.Integer, primary_key=True)
-    status = db.Column(db.String(20), nullable=False, default='pending')  # pending, in_progress, completed
-    start_year = db.Column(db.Integer, nullable=False)  # Filter: e.g., 2023
-    end_year = db.Column(db.Integer, nullable=False)    # Filter: e.g., 2025
-    companies = db.Column(db.String(100))               # Filter: e.g., "Honda,Toyota" (optional)
+    status = db.Column(db.String(20), nullable=False, default='pending')
+    start_year = db.Column(db.Integer, nullable=False)
+    end_year = db.Column(db.Integer, nullable=False)
+    companies = db.Column(db.String(100))
     created_at = db.Column(db.DateTime, default=db.func.now())
-
-    # Relationship to sales records
     records = db.relationship('SalesRecord', backref='task', lazy=True)
 
 class SalesRecord(db.Model):
