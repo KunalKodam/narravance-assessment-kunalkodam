@@ -2,6 +2,7 @@
 
 A web application to analyze car sales data, built with Flask (backend) and React/D3.js (frontend). Users can create tasks to process sales data from JSON and CSV sources, filter by year range and companies, and visualize the results with interactive charts.
 
+### Link to the Youtube Video - https://www.youtube.com/watch?v=6kte9xrRrTU
 ## Features
 - **Task Creation**: Submit tasks to process car sales data with filters (year range, companies).
 - **Background Processing**: Tasks are processed in a background thread, with status updates (pending, in_progress, completed).
@@ -88,3 +89,18 @@ The backend will run on http://127.0.0.1:5000
 - GET /api/tasks: List all tasks.
 - GET /api/tasks/<task_id>: Get task status and details.
 - GET /api/tasks/<task_id>/records: Get sales records for a task.
+
+
+## Images
+
+### Start Page
+![img.png](img.png)
+
+### Previous Tasks
+![img_1.png](img_1.png)
+
+### Visualizations
+
+![img_2.png](img_2.png)
+
+![img_3.png](img_3.png)
